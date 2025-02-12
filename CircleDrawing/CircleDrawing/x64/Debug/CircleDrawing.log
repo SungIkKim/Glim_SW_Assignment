@@ -1,0 +1,29 @@
+﻿  CircleDrawingDlg.cpp
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(67,63): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(67,31): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(66,70): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(66,38): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(86,86): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(86,67): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(86,48): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(86,29): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\CircleDrawingDlg.cpp(119,31): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CircleDrawingDlg.cpp'을(를) 컴파일하는 중)
+  
+  CircleDrawing.vcxproj -> C:\Users\akataka\Desktop\GSA\Glim_Assignment\CircleDrawing\x64\Debug\CircleDrawing.exe

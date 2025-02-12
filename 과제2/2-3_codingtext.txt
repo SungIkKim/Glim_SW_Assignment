@@ -1,0 +1,123 @@
+#include <string>
+#include <vector>
+#include<algorithm>
+#include<cstdlib>
+
+using namespace std;
+
+int solution(int a, int b, int c, int d) {
+    int answer, p, q;
+
+    vector<int> dice = { a, b, c, d };
+    sort(dice.begin(), dice.end());
+
+    if (dice[0] == dice[3]) {
+        p = dice[0];
+        answer = 1111 * p;
+    }
+
+    // 세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ q)라면
+    else if (dice[0] == dice[2]) {
+        p = dice[0];
+        q = dice[3];
+        answer = (10 * p + q) * (10 * p + q);
+    }
+    else if (dice[1] == dice[3]) {
+        p = dice[1];
+        q = dice[0];
+        answer = (10 * p + q) * (10 * p + q);
+    }
+
+
+    else if (dice[0] == dice[1]) {
+        // 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × |p - q|점을 얻습니다.1
+        if (dice[2] == dice[3]) {
+            p = dice[0];
+            q = dice[2];
+            answer = (p + q) * abs(p - q);
+        }
+
+        // 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.1
+        else {
+            q = dice[2];
+            answer = q * dice[3];
+        }
+    }
+    else if (dice[0] == dice[2]) {
+        // 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × |p - q|점을 얻습니다.2
+        if (dice[1] == dice[3]) {
+            p = dice[0];
+            q = dice[1];
+            answer = (p + q) * abs(p - q);
+        }
+
+        // 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.2
+        else {
+            q = dice[1];
+            answer = q * dice[3];
+        }
+    }
+    else if (dice[0] == dice[3]) {
+        // 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × |p - q|점을 얻습니다.3
+        if (dice[1] == dice[2]) {
+            p = dice[0];
+            q = dice[1];
+            answer = (p + q) * abs(p - q);
+        }
+
+        // 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.3
+        else {
+            q = dice[1];
+            answer = q * dice[2];
+        }
+    }
+
+    else if (dice[1] == dice[2]) {
+        // 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × |p - q|점을 얻습니다.4
+        if (dice[0] == dice[3]) {
+            p = dice[1];
+            q = dice[0];
+            answer = answer = (p + q) * abs(p - q);
+        }
+
+        // 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.4
+        else {
+            q = dice[0];
+            answer = q * dice[3];
+        }
+    }
+    else if (dice[1] == dice[3]) {
+        // 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × |p - q|점을 얻습니다.5
+        if (dice[0] == dice[2]) {
+            p = dice[1];
+            q = dice[0];
+            answer = answer = (p + q) * abs(p - q);
+        }
+
+        // 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.5
+        else {
+            q = dice[0];
+            answer = q * dice[2];
+        }
+    }
+    else if (dice[2] == dice[3]) {
+        // 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × |p - q|점을 얻습니다.6
+        if (dice[0] == dice[1]) {
+            p = dice[2];
+            q = dice[0];
+            answer = answer = (p + q) * abs(p - q);
+        }
+
+        // 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.6
+        else {
+            q = dice[0];
+            answer = q * dice[1];
+        }
+    }
+
+    // 네 주사위에 적힌 숫자가 모두 다르다면 나온 숫자 중 가장 작은 숫자 만큼의 점수를 얻습니다.
+    else {
+        answer = dice[0];
+    } 
+    return answer;
+}
