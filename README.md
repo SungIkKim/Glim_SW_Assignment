@@ -18,9 +18,10 @@
 - 랜덤한 위치로 이동 및 정원 그리기 동작을 초당 2회, 총 10번 자동으로 반복하되 메인UI가 프리징 상태가 되지 않도록 별도 쓰레드로 구현해야 합니다.
 - MFC Dialog 기반 프로젝트로 작성해야 합니다.
 - 클릭 지점 원과 정원을 그릴 때 CDC 클래스를 사용하면 안됩니다. (안내한 유튜브 영상 참고)
-![glim1](https://github.com/user-attachments/assets/1f5cf604-dde6-435c-823e-0294e7cb30a1)
+![glim1](https://github.com/user-attachments/assets/a0d8360b-56e5-49a6-a98a-239cf1f1f9ad)
 - 정원이 그리기 영역을 벗어나는 경우는 아래와 같이 전체 원이 표시되지 않아도 됩니다.
-![glim2](https://github.com/user-attachments/assets/28769c96-79a9-4437-9a9f-75edb850d194)
+![glim2](https://github.com/user-attachments/assets/4bda0239-0d7c-4515-bddf-0c2d78c4c105)
+
 
 
 
@@ -31,5 +32,6 @@
 아래의 과제진행 순서를 참고하여 4개 문제를 해결하고 9단계의 코드, 10단계의 스크린샷을 과제 1번 git 저장소 내에 폴더를 생성하여 저장하고 Push해 주시기 바랍니다.
 
 [2-1.양꼬치](https://school.programmers.co.kr/learn/courses/30/lessons/120830?language=cpp)   [2-2.이차원 배열 대각선 순회하기](https://school.programmers.co.kr/learn/courses/30/lessons/181829?language=cpp)  [2-3.주사위 게임 3](https://school.programmers.co.kr/learn/courses/30/lessons/181916?language=cpp)  [2-4,평행](https://school.programmers.co.kr/learn/courses/30/lessons/120875?language=cpp)
-![glim3](https://github.com/user-attachments/assets/073e7b49-6579-4270-b310-549b8c8ef913)
+![glim3](https://github.com/user-attachments/assets/eb2d0e23-df47-4eb6-8ecf-243dc87c2137)
+
 
